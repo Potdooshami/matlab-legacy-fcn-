@@ -34,9 +34,11 @@ classdef climsc
     end
     methods (Hidden,Static)
         function [ax,img,dt] = auto_target()
-            ax = gca()
+            ax = gca();
             img = findobj(ax,'type','image');
-            img = img(1);
+            try
+                img = img(1);
+            end
             dt = img.CData;
             dt = dt(:);
         end
