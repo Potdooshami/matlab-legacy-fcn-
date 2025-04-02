@@ -10,6 +10,7 @@ results.N_loose = N_loose;
 results.N_partition = N_partition;
 results.edges_loose = edges_loose;
 results.bin_loose = bin_loose;
+results.dt = dt;
 end
 
 %[appendix]{"version":"1.0"}
