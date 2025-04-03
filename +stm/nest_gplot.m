@@ -6,7 +6,11 @@ for iLoose = 1:length(results.N_loose)
     ptsFcs = ptsFcs(:);       
     bings(iLoose,:) = mean(G(ptsFcs,:));
 end
+plot(V,bings,LineWidth=2);
+xlabel(pubfig.labeler('E','eV'))
+ylabel(pubfig.labeler('LDOS','arb'))
 end
+
 
 %[appendix]{"version":"1.0"}
 %---

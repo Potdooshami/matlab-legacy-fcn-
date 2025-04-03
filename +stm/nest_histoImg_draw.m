@@ -7,6 +7,6 @@ realLoose = label2rgb(results.bin_loose,clrs);
 imshow(permute(realLoose,[2 1 3]));
 set(gca,'YDir','normal');
 axis image;
-xlabel(pubfig.labeler(,))
-ylabel(pubfig.labeler(,))
+xlabel(pubfig.labeler('x','pxl'))
+ylabel(pubfig.labeler('y','pxl'))
 end

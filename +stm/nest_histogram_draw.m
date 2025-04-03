@@ -4,10 +4,12 @@ hold on
 for ithLooseBin = 1:length(results.N_loose)
     bwlistBin = results.N_partition==ithLooseBin;
     ilistBin = find(bwlistBin);
-    egNow = results.edges(min(ilistBin):max(ilistBin)+1)
+    egNow = results.edges(min(ilistBin):max(ilistBin)+1);
     histogram(results.dt,egNow)
 end
 hold off
+xlabel(pubfig.labeler('sym','unit'))
+ylabel(pubfig.labeler('N','# of data points'))
 end
 
 %[appendix]{"version":"1.0"}
